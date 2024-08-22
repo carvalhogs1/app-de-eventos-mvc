@@ -1,0 +1,21 @@
+{
+  "name": "app-de-eventos-mvc",
+  "version": "1.0.0",
+  "description": "Aplicação web de eventos com arquitetura MVC",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/server.js"
+  },
+  "keywords": [],
+  "author": "kaiqueCovo",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "chokidar": "^3.6.0",
+    "connect-livereload": "^0.6.1",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "livereload": "^0.9.3",
+    "nodemon": "^3.1.4"
+  }
+}

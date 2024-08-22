@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Archivo', sans-serif;
+  font-size: 16px;
+  background: #D9D9D9;
+
+  width: 100%;
+  height: 100vh;
+}
+
+.caixa {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo {
+  color: #FFF;
+  font-size: 36px;
+  font-weight: 600;
+
+  margin-bottom: 24px;
+}
+
+.header {
+  background-color: #121214;
+  color: #FFF;
+  width: 100%;
+  height: 370px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.informacao {
+  width: 736px;
+}
+
+small {
+  color: #42D3FF;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.formulario {
+  background-color: #FFF;
+  padding: 64px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 736px;
+  margin-top: -50px;
+}
+
+.formulario button {
+  width: 100%;
+  padding: 15px;
+
+  color: #FFF;
+  background-color: #04D361;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+  margin-bottom: 24px;
+  transition: background-color 0.3s ease;
+}
+
+.formulario button:hover {
+  background-color: #218838;
+}
+
+.formulario h2 {
+  color: #32264D;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.eventos {
+  list-style: none;
+}
+
+.eventos li {
+  background-color: #FFF;
+  padding: 10px 0;
+}
