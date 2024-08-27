@@ -9,6 +9,7 @@ var loginController = require("./controllers/loginController");
 var cadastroController = require("./controllers/cadastroController");
 var eventoController = require("./controllers/eventoController");
 
+
 const app = express();
 
 // Configuração do body-parser
@@ -27,9 +28,20 @@ app.use(express.static(path.join(__dirname, "public")));
 enableHotReload(app);
 
 // Rotas
+
+// Rota para a pagina inicial
 app.get("/", loginController.exibirPaginaLogin);
+
+// Rota para a pagina de cadastro
 app.get("/criar-conta", cadastroController.exibirPaginaCadastro);
+
+// Rota para criar um novo usuario
+app.post("/criar-conta", cadastroController.adicionarUsuario)
+
+// Rota para a pagina de lista de evento
 app.get("/eventos", eventoController.exibirPaginaEventos);
+
+// Rota para a pagina de criar evento
 app.get("/criar-evento", eventoController.exibirPaginaCriarEvento);
 
 // Inicie o servidor
