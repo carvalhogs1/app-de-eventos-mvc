@@ -38,6 +38,9 @@ app.get("/criar-conta", cadastroController.exibirPaginaCadastro);
 // Rota para criar um novo usuario
 app.post("/criar-conta", cadastroController.adicionarUsuario)
 
+// Rota para criar um novo evento
+app.post("/criar-evento", eventoController.adicionarEvento)
+
 // Rota para a pagina de lista de evento
 app.get("/eventos", eventoController.exibirPaginaEventos);
 
