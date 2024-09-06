@@ -12,6 +12,11 @@ function adicionarEvento(titulo, local, data){
     console.log(eventos)
 }
 
+function obterEventos(){
+    return eventos;
+}
+
 module.exports = {
-    adicionarEvento
+    adicionarEvento,
+    obterEventos
 }

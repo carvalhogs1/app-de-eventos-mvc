@@ -26,18 +26,11 @@
       <h2>Eventos</h2>
 
       <ul class="eventos">
-        <li>
-          Título do evento - 10/10/2024 - Gavião Peixoto
-        </li>
-        <li>
-          Título do evento - 10/10/2024 - Gavião Peixoto
-        </li>
-        <li>
-          Título do evento - 10/10/2024 - Gavião Peixoto
-        </li>
-        <li>
-          Título do evento - 10/10/2024 - Gavião Peixoto
-        </li>
+        <% eventos.forEach(evento => { %> 
+          <li>
+            <%= evento.titulo %> - <%= new Date(evento.data).toLocaleString() %> - <%= evento.local %>
+          </li>
+          <% }); %>
       </ul>
 
     </section>

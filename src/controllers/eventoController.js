@@ -1,7 +1,10 @@
 const eventoModel = require('../models/eventomodel')
 
 function exibirPaginaEventos(request, response) {
-  response.render('eventos');
+
+  const eventos = eventoModel.obterEventos();
+
+  response.render('eventos', { eventos });
 }
 
 function exibirPaginaCriarEvento(request, response) {
