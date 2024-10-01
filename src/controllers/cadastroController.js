@@ -11,7 +11,7 @@ function adicionarUsuario(request, response) {
   const {nome, email, senha} = request.body;
 
 
-  usuarioModel.adicionarUsuario(nome, email, senha);
+  usuarioModel.adicionarUsuario(nome, email, senha, 'usuario');
 
   response.redirect("/")
 }
